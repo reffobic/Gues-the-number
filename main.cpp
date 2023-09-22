@@ -12,13 +12,14 @@ int main() {
     int randomNumber = rand() % 100 + 1;
     int guess, attempts = 0;
 
-    cout << "---------- Guess the Number Game ----------" << endl;
+    cout << endl;
+    cout << "------------------ Guess the Number Game ------------------" << endl;
     cout << "A number have been picked from 1 to 100, try to guess it ;)" << endl;
+    cout << endl;
 
     do {
         cout << "Enter your guess: ";
         cin >> guess;
-        cout << endl;
 
         if (guess < 0 || guess > 100){
             cout << "Invalid input, please enter a number between 1 and 100" << endl;
