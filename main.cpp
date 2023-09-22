@@ -18,6 +18,7 @@ int main() {
     do {
         cout << "Enter your guess: ";
         cin >> guess;
+        cout << endl;
 
         if (guess < 0 || guess > 100){
             cout << "Invalid input, please enter a number between 1 and 100" << endl;
@@ -27,9 +28,9 @@ int main() {
         attempts++;
 
         if(guess < randomNumber){
-            cout << "low, try again :)" << endl;
+            cout << "low, try again :)" << endl << endl;
         } else if (guess > randomNumber){
-            cout << "high, try again :)" << endl;
+            cout << "high, try again :)" << endl << endl;
         } else {
             cout << endl << "Nice you got it right! Here is your free cookie :D\n\n"
 
